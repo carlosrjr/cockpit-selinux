@@ -1,0 +1,13 @@
+#!/bin/bash
+
+case $1 in
+	-add) (echo "$3"; echo "$3") | smbpasswd -a $2
+		;;
+	-machine) smbpasswd -a -m $2
+		;;
+	-del) smbpasswd -x $2
+		;;
+	*) echo "Ops... houve um problema!"
+esac
+
+exit 0

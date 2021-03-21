@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, :focus {
+    outline: none;
+}
+
+#tables {
+    margin: 50px;
+}
+
+#tables table {
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 2px #888;
+}
+
+table caption {
+    font-weight: bold;
+    font-size: 3em;
+}
+
+table tr td {
+    text-align: center;
+}
+
+table tr th {
+    text-align: center;
+}
+
+.info {
+    text-align: justify;
+}
+
+#status {
+    margin-right: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+#status_selinux {
+    font-size: 1.3em;
+    margin-right: 5px;
+}

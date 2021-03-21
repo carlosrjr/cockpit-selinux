@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, :focus {
+    outline: none;
+}
+
+html, body {
+    max-height: 100vh;
+}
+
+#content {
+    display: inline-flex;
+}
+
+#select_permissions {
+    width: 400px;
+    margin: 30px;
+    height: 100vh;
+}
+
+#btn_submit {
+    margin-top: 40px;
+}
+
+.centered {
+    position: fixed; /* or absolute */
+    top: 50%;
+    left: 50%;
+}
+
+#content {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.info {
+    margin: 30px 30px 0 30px;
+    text-align: justify;
+}
+
+.vertical-margin-30 {
+    margin: 30px auto;
+}
+
+#status {
+    margin-right: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+#status_selinux {
+    font-size: 1.3em;
+    margin-right: 5px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Samba users</title>
+    <meta charset="utf-8">
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet">
+    <link href="/usr/share/cockpit/base1/cockpit.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mdtoast.min.css">
+    <link href="css/samba_selinux.css" type="text/css" rel="stylesheet">
+    <script src="../base1/cockpit.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="grey darken-4">
+            <div class="nav-wrapper">
+                <ul id="nav-mobile" class="left">
+                    <li><a href="index.html">Samba Users</a></li>
+                    <li><a href="samba_selinux.html">Samba Selinux</a></li>
+                    <li><a href="apache_selinux.html">Apache SELinux</a></li>
+                </ul>
+                <div id="status" class="right">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="content">    
+        <div>
+            <p class="info">
+                Lista as políticas de  segurança do Samba, possibilitando ativar ou desativar cada uma delas. O mau uso das permissões pode comprometer a funcionalidade do serviço ou a segurança do sistema.
+            </p>
+        </div>
+        <div class="input-field" id="select_permissions">
+            
+        </div>
+        <span id="box_submit">
+            
+        </span>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/mdtoast.min.js"></script>
+    <script src="js/samba_selinux.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Samba users</title>
+    <meta charset="utf-8">
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet">
+    <link href="../base1/cockpit.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mdtoast.min.css">
+    <script src="../base1/cockpit.js"></script>
+</head>
+
+<body>
+    <nav class="grey darken-4">
+        <div class="nav-wrapper">
+            <ul id="nav-mobile" class="left">
+                <li><a href="index.html">Samba Users</a></li>
+                <li><a href="samba_selinux.html">Samba Selinux</a></li>
+                <li><a href="apache_selinux.html">Apache SELinux</a></li>
+            </ul>
+            <div id="status" class="right">
+            </div>
+        </div>
+    </nav>
+    <div class="pf-c-page">
+        <main class="pf-c-page__main" tabindex="-1">
+            <section class="pf-c-page__main-section pf-m-light">
+                <label class="control-label" for="msg"></label>
+                <br /><br />
+                <div id="tables">
+                    <p class="info">
+                        Lista os usuários cadastrados no sistema operacional, ao clicar no botão “ADICIONAR” referente a um usuário ele será cadastrado no Samba com a mesma senha que foi cadastrada no sistema operacional.
+                    </p>
+                    <table border="1">
+                        <caption>System users</caption>
+                        <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>Add to samba</th>
+                            </tr>
+                        </thead>
+                        <tbody id="system_users_table">
+
+                        </tbody>
+                    </table>
+
+                    <br /><br />
+                    <p class="info">
+                        Lista os usuários cadastrados no Samba, ao clicar no botão “REMOVER” referente a um usuário ele será removido do Samba.
+                    </p>
+                    <table border="1">
+                        <caption>Samba users</caption>
+                        <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody id="users_table">
+
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/mdtoast.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

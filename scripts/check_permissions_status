@@ -1,0 +1,3 @@
+#!/bin/bash
+
+semanage boolean -l | grep samba | awk -F'[/()]' '{print $2}' | awk '{print $1}'

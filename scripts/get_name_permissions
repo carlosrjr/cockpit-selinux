@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+    exit 1
+fi
+
+semanage boolean -l | grep $1 | awk '{print $1}'
+
+exit 0

@@ -1,0 +1,9 @@
+{
+    "version": 0,
+    "tools": {
+        "samba": {
+            "label": "SELinux Permissions",
+            "path": "index.html"
+        }
+    }
+}

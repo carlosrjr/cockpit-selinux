@@ -1,0 +1,3 @@
+#!/bin/bash
+
+pdbedit -w -L | awk -F'[/:]' '{print $1}'
